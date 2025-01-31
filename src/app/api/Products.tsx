@@ -85,7 +85,7 @@ const Products = () => {
                                     className="w-52 h-auto"
                                     src={item.images[0]}
                                     alt={item.title}
-                                    width={208} // Tailwind `w-52` = 208px
+                                    width={208} 
                                     height={0}
                                     layout="intrinsic"
                                 />

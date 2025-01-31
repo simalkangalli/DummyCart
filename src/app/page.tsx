@@ -1,4 +1,4 @@
-import Products from "./components/api/Products";
+import Products from "./api/Products";
 {/*import Banner from "./components/home/Banner";*/ }
 {/* import Category from "./components/home/Category";*/}
 
