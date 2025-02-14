@@ -25,6 +25,6 @@
       
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/api/Products.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/api/Products.tsx", "src/app/api/ProductListing.tsx", "src/app/api/ProductComponents.tsx", "src/app/products/[id]/ProductDetails.tsx"],
   "exclude": ["node_modules"]
 }

@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 
 const HamburgerMenu = () => {
     return (
-        <div className='relative '> {/* tablet tarzı ekranlarda ekrana uygun küçültme sağlaması için md:hidden */}
+        <div className='relative  flex md:hidden ' > {/* tablet tarzı ekranlarda ekrana uygun küçültme sağlaması için md:hidden */}
             
             <RxHamburgerMenu size="25"/>
 
