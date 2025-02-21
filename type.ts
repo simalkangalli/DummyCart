@@ -45,6 +45,7 @@
     dummy: {
       cart: ProductType[];
       userInfo: |null;
+     
     };
   }
 

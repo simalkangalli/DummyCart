@@ -9,7 +9,9 @@ const ProductImages = ({ images }: Props) => {
   const [selectedImage, setSelectedImage] = useState(images?.[0] || "");
 
   return (
+
     <div className="flex flex-col items-center justify-center min-h-[80vh] mt-20">
+       
       {/* Büyük Görsel */}
       <div className="mb-6 flex justify-center">
         {selectedImage && (
@@ -22,9 +24,8 @@ const ProductImages = ({ images }: Props) => {
           />
         )}
       </div>
-
-      {/* Küçük Görseller */}
-      <div className="flex gap-4 justify-between ">
+       {/* Küçük Görseller */}
+       <div className="flex gap-4 justify-between ">
         {images?.map((item, index) => (
           <Image
             key={index}
@@ -39,6 +40,9 @@ const ProductImages = ({ images }: Props) => {
           />
         ))}
       </div>
+
+    
+     
     </div>
   );
 };

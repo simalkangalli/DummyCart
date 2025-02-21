@@ -10,7 +10,7 @@ import Button from './Button';
 const Banner = () => {
   return (
     <div className="bg-blue-500 py-60 flex items-center justify-center text-themeWhite pt-10">
-      <Container className="flex flex-col items-center gap-4 text-center">
+      <Container className="flex flex-col items-center gap-4 text-center h-16">
         <div className='flex flex-col gap-5 '>
         <p className="text-base font-semibold">{banner?.priceText}</p>
         <h2 className="text-5xl font-bold max-w-[500px]">{banner?.title}</h2>

@@ -5,16 +5,16 @@ import axios from "axios";
 import ProductCard from "./ProductCard";
 import { ProductType } from "type"; 
 
-// ✅ 1️⃣ Props arayüzü tanımla (eğer dışarıdan props alacaksan)
+//  Props arayüzü tanımla (eğer dışarıdan props alacaksan)
 interface ProductListProps {
   products?: ProductType[]; // Opsiyonel olarak dışarıdan ürün listesi alabilir
 }
 
-// ✅ 2️⃣ Bileşen tanımı (props varsa alır, yoksa kendi API çağrısını yapar)
+//  Bileşen tanımı (props varsa alır, yoksa kendi API çağrısını yapar)
 const ProductList: React.FC<ProductListProps> = ({ products: initialProducts }) => {
   const [products, setProducts] = useState<ProductType[]>(initialProducts || []); // Eğer props'tan ürün geldiyse kullan, yoksa boş dizi
   const [loading, setLoading] = useState<boolean>(!initialProducts); // ✅ Yükleme durumunu yönet
-  const [error, setError] = useState<string | null>(null); // ✅ Hata mesajını yönet
+  const [error, setError] = useState<string | null>(null); // Hata mesajını yönet
 
   useEffect(() => {
     if (!initialProducts) { // Eğer `products` props olarak gelmemişse API çağrısı yap

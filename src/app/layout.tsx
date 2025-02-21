@@ -1,7 +1,11 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@components/header/Header";
 import Footer from "@components/Footer";
+import Layout from "@components/Layout";
+import  { Toaster } from 'react-hot-toast';
+
 
 
 export const metadata: Metadata = {
@@ -14,15 +18,27 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">
+      <body className="flex-grow">
        
      
-     
+    <Layout>
+       
      <Header/>
     {children}
+    
+    <Footer/>
+    <Toaster position ="bottom-right"  toastOptions={{
+      duration:3000,
+      style:{background:'#000000',color:'#fffff'}
+    }}/>
+
+  
+   
 
    
-    <Footer />
+   
+    </Layout>
+   
        
    </body>
     </html>

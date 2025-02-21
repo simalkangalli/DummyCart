@@ -9,7 +9,9 @@ import { navigation } from './constants'
 import { BsEnvelopeAt } from 'react-icons/bs'
 
 const Footer = () => {
+    
     return (
+        <footer className=''>
         <div className="bg-white text-pink-600 py-10 lg:py-20 font-semibold ">
             <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
@@ -86,12 +88,13 @@ const Footer = () => {
 
                     </div>
                 </div>
+               
 
-                <footer className="relative z-10 bg-white text-center p-4 w-full">
-        © 2025 DummyCart
-      </footer>
+
+
             </Container>
         </div>
+        </footer>
     )
 }
 

@@ -37,7 +37,7 @@ const ProductCard = ({ product }: { product: ProductType }) => {
             </div>
 
             <div className="flex justify-center">
-                <AddToCartButton/> 
+                <AddToCartButton product={product}/> 
             </div>
         </div>
     );

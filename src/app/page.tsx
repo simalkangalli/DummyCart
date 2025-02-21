@@ -1,4 +1,5 @@
 import Banner from "@components/Banner";
+
 import ProductList from "@components/ProductList";
 import axios from "axios";
 
@@ -24,6 +25,7 @@ export default async function Home() {
       <main>
         <Banner />
         <p className="text-center text-red-500">Ürünler yüklenirken hata oluştu.</p>
+        
       </main>
     );
   }
