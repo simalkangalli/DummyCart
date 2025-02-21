@@ -1,19 +1,19 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ProductType } from "type"; // ✅ Doğru yoldan import ettiğinden emin ol
 
-// ✅ Sepetteki ürünler için yeni bir tip oluşturuyoruz
+//  Sepetteki ürünler için yeni bir tip oluşturuyoruz
 interface CartProduct extends ProductType {
   quantity: number;
 }
 
-// ✅ Redux Store'un tipini tanımlıyoruz
+//  Redux Store'un tipini tanımlıyoruz
 interface InitialState {
   cart: CartProduct[]; // 🔹 `quantity` içeren yeni tip kullanıldı
   favourite: ProductType[];
   userInfo: null;
 }
 
-// ✅ Başlangıç durumu (Initial State)
+// Başlangıç durumu (Initial State)
 const initialState: InitialState = {
   cart: [],
   favourite: [],
@@ -31,9 +31,9 @@ export const dummySlice = createSlice({
       );
 
       if (existingProduct) {
-        existingProduct.quantity += 1; // 🔹 Mevcut ürün varsa `quantity` artır
+        existingProduct.quantity += 1; // Mevcut ürün varsa `quantity` artır
       } else {
-        state.cart.push({ ...action.payload, quantity: 1 }); // 🔹 Yeni ürünü ekle
+        state.cart.push({ ...action.payload, quantity: 1 }); //  Yeni ürünü ekle
       }
     },
     increaseQuantity: (state, action) => {

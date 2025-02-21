@@ -5,6 +5,7 @@ import FacebookProvider from "next-auth/providers/facebook";
 
 
 
+
 const authOptions: NextAuthOptions = {
   providers: [
     GithubProvider({
@@ -19,6 +20,7 @@ const authOptions: NextAuthOptions = {
       clientId: process.env.FACEBOOK_CLIENT_ID!,
       clientSecret: process.env.FACEBOOK_CLIENT_SECRET!,
     }),
+    
    
   ],
 };

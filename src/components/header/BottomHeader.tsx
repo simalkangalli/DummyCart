@@ -20,8 +20,8 @@ const BottomHeader = () => {
                         </Link>
 
                     ))}
-                    <Link href={'/signin'} className="hover:text-themeColor duration-200">
-                        Please signin to view your profile
+                    <Link href={'/signin'} className=" text-green-600 hover:text-themeColor  duration-200">
+                        Credentials Login 
                     </Link>
                 </div>
                 <p className=" md: inline-flex text-xs text-black font-medium">Contact:<span>+90 789 6589</span></p>
