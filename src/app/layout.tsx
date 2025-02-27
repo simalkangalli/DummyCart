@@ -18,7 +18,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="flex-grow">
+      <body className="flex-grow px-20 py-10">
        
      
     <Layout>
